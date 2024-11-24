@@ -21,4 +21,3 @@ charsarr.forEach((key) => {
     }
 });
 console.log(checkarr);
-
