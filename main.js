@@ -1,24 +1,18 @@
 //Fimd the fist time a character appears more than once in string.
 let charstring = "ABCDEFABCDEF";
 
-let charsarr = Array();
-let checkarr = Array();
+let charsarr = [];
+let checkarr = [];
 let founditem = 0;
 let finish = false;
 
 charsarr = [...charstring];
 
-charsarr.forEach((key) => {
-    founditem = checkarr.includes(key);
-    if (founditem) {
-        if (!finish) {
-            finish = true;
-            console.log(key);
-            console.log('Found');
-            return;
-        }
-    } else {
+for(let key of charsarr) {
+    if (checkarr.includes(key)) {
         checkarr.push(key);
+    } else {
+       console.log("Fist repeated character: ", key);
     }
-});
-console.log(checkarr);
+    return -1;
+}
