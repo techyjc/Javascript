@@ -1,3 +1,4 @@
+//Fimd the fist time a character appears more than once in string.
 let charstring = "ABCDEFABCDEF";
 
 let charsarr = Array();
