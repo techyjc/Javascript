@@ -3,8 +3,6 @@ let charstring = "ABCDEFABCDEF";
 
 let charsarr = [];
 let checkarr = [];
-let founditem = 0;
-let finish = false;
 
 charsarr = [...charstring];
 
